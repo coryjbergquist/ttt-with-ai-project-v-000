@@ -4,7 +4,7 @@ require_relative '../config/environment'
 
 puts "Hello, let's play Tic-Tac-Toe!"
 puts "Would you like to play a 'simulation', 'single player', or 'two player'?"
-game.start_game
+Game.start_game
 
 # if a == "simulation"
 #   new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
