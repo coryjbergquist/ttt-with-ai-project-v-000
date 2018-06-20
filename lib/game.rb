@@ -79,6 +79,8 @@ WIN_COMBINATIONS.each do |win_combination|
   end
 
   def self.start_game
+    puts "Hello, let's play Tic-Tac-Toe!"
+    puts "Would you like to play a 'simulation', 'single player', or 'two player'?"
     a = gets.strip
     if a == "simulation"
       new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
