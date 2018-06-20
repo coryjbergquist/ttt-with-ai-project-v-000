@@ -11,3 +11,16 @@ b = gets.strip
 if b == "me"
   new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
   new_game.play
+elsif b == "computer"
+  new_game = Game.new(Players::Computer.new("X"), Players::Human.new("O"), Board.new)
+  new_game.play
+end
+end
+
+if a == "two player"
+  puts "Who would like to go first and be 'X'?"
+  puts "Enter 'me' or 'you'"
+c = gets.strip
+if c == "me"
+  new_game = Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
+  new_game.play 
