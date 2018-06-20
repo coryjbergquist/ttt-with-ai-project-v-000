@@ -2,8 +2,8 @@
 
 require_relative '../config/environment'
 
-puts "Hello, let's play Tic-Tac-Toe!"
-puts "Would you like to play a 'simulation', 'single player', or 'two player'?"
+# puts "Hello, let's play Tic-Tac-Toe!"
+# puts "Would you like to play a 'simulation', 'single player', or 'two player'?"
 Game.start_game
 
 # if a == "simulation"
