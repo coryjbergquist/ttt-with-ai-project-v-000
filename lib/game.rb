@@ -92,7 +92,7 @@ WIN_COMBINATIONS.each do |win_combination|
       new_game = Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
       new_game.play
     else
-      Game.start_game
+      self.start_game
     end
   end
 
