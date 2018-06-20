@@ -12,6 +12,7 @@ module Players
       else
         move(board)
       end
+    end
     num.to_s
   end
 
