@@ -78,5 +78,23 @@ WIN_COMBINATIONS.each do |win_combination|
   end
   end
 
+  def start_game
+    a = gets.strip
+    if a == "simulation"
+      new_game = Game.new(Players::Computer.new("X"), Players::Computer.new("O"), Board.new)
+      new_game.play
+
+    elsif a == "single player"
+      new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
+      new_game.play
+
+    elsif a == "two player"
+      new_game = Game.new(Players::Human.new("X"), Players::Human.new("O"), Board.new)
+      new_game.play
+    else
+      game.start_game
+    end
+  end
+
 
 end
