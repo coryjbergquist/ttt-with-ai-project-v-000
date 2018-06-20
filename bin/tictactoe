@@ -4,6 +4,10 @@ require_relative '../config/environment'
 
 
 Game.start_game
-
-# puts "Who would like to go first and be 'X'?"
-# gets.strip
+if a == "single player"
+  puts "Who would like to go first and be 'X'?"
+  puts "Enter 'me' or 'computer'"
+b = gets.strip
+if b == "me"
+  new_game = Game.new(Players::Human.new("X"), Players::Computer.new("O"), Board.new)
+  new_game.play
